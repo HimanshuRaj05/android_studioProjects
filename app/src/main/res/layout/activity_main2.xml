@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggreen"
+    tools:context=".MainActivity2">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06999999">
+
+
+        <TextView
+            android:id="@+id/pdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/bg_black"
+            android:fontFamily="@font/allerta"
+
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="Enter present date"
+
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:orientation="horizontal"
+
+            >
+
+            <EditText
+                android:id="@+id/etpd"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:hint="Day"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etpm"
+
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:hint="Month"
+                android:inputType="number"
+                android:paddingLeft="2dp" />
+
+
+            <EditText
+                android:id="@+id/etpy"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:hint="Year"
+                android:inputType="number" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+
+        android:layout_width="310dp"
+
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.110000014">
+
+
+        <TextView
+            android:id="@+id/dobLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/bg_black"
+            android:fontFamily="@font/allerta"
+
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="Enter your date of birth"
+
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:orientation="horizontal"
+
+            >
+
+            <EditText
+                android:id="@+id/etbd"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:hint="Day"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etbm"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:hint="Month"
+                android:inputType="number"
+                android:paddingLeft="2dp" />
+
+
+            <EditText
+                android:id="@+id/etby"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:hint="Year"
+                android:inputType="number" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clear"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/btnbgblue"
+            android:fontFamily="@font/allerta"
+            android:padding="15dp"
+            android:text="Clear"
+            android:textAllCaps="false"
+            android:textColor="@color/btnColor"
+
+
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnCalculate"
+            app:layout_constraintEnd_toStartOf="@+id/btnCalculate"
+            app:layout_constraintHorizontal_bias="1.0"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnCalculate" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="20dp"
+            android:background="@drawable/btnbg"
+            android:fontFamily="@font/allerta"
+            android:padding="15dp"
+            android:text="Calculate"
+
+            android:textAllCaps="false"
+            android:textColor="@color/fontblack"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="300dp"
+
+
+        android:layout_height="150dp"
+        android:background="@drawable/displaybg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.617">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta"
+            android:text="Your age is:"
+            android:textColor="@color/fontblack"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.232" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            app:layout_constraintVertical_bias="0.24000001">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Years"
+
+                    android:textColor="@color/fontblack"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/fontblack"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Months"
+                    android:textColor="@color/fontblack"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/fontblack"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Days"
+
+                    android:textColor="@color/fontblack"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/fontblack"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_begin="339dp" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_end="340dp" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
